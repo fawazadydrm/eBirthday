@@ -1,0 +1,1651 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Ibrahim is Turning FOUR! You're invited to celebrate his 4th birthday on 14 November 2026.">
+<title>Ibrahim is Turning FOUR! 🚧</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Fredoka:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+/* =========================================
+   CSS CUSTOM PROPERTIES
+========================================= */
+:root {
+  --yellow: #FFC400;
+  --yellow-dark: #FFB800;
+  --yellow-deep: #E6A800;
+  --orange: #FF6A00;
+  --orange-hot: #FF4B1F;
+  --black: #080808;
+  --charcoal: #151515;
+  --charcoal-light: #1e1e1e;
+  --silver: #BFC3C7;
+  --silver-dark: #8a9099;
+  --warm-white: #FFF3D6;
+  --white: #ffffff;
+  --hazard-stripe: repeating-linear-gradient(-45deg, var(--yellow) 0px, var(--yellow) 16px, var(--black) 16px, var(--black) 32px);
+  --shadow-3d: 1px 1px 0 #c77800, 2px 2px 0 #b86c00, 3px 3px 0 #a05e00, 4px 4px 0 #8a4f00, 5px 5px 0 #7a4500, 6px 6px 0 #6b3c00, 0 0 40px rgba(255,196,0,0.3);
+}
+
+/* =========================================
+   RESET & BASE
+========================================= */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; font-size: 16px; }
+
+body {
+  font-family: 'Fredoka', sans-serif;
+  background: var(--black);
+  color: var(--warm-white);
+  overflow-x: hidden;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+img { max-width: 100%; height: auto; display: block; }
+
+/* =========================================
+   UTILITY CLASSES
+========================================= */
+.hazard-stripe { background: var(--hazard-stripe); }
+.hazard-stripe-sm { height: 16px; background: var(--hazard-stripe); }
+.hazard-stripe-md { height: 24px; background: var(--hazard-stripe); }
+.hazard-stripe-lg { height: 32px; background: var(--hazard-stripe); }
+
+.section-pad { padding: 60px 20px; }
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* =========================================
+   3D DISPLAY TEXT
+========================================= */
+.display-3d {
+  font-family: 'Lilita One', cursive;
+  background: linear-gradient(180deg, #FFE566 0%, #FFC400 40%, #FF8C00 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: none;
+  filter: drop-shadow(1px 1px 0 #c77800)
+           drop-shadow(2px 2px 0 #a05e00)
+           drop-shadow(4px 4px 0 #7a4500)
+           drop-shadow(0 0 20px rgba(255,180,0,0.4));
+  -webkit-text-stroke: 0;
+  position: relative;
+}
+
+.display-3d-white {
+  font-family: 'Lilita One', cursive;
+  color: var(--white);
+  text-shadow: 1px 1px 0 #555, 2px 2px 0 #444, 3px 3px 0 #333, 0 0 15px rgba(255,255,255,0.1);
+}
+
+/* =========================================
+   BOLT / SCREW DECORATION
+========================================= */
+.bolt {
+  width: 14px;
+  height: 14px;
+  background: radial-gradient(circle at 35% 35%, #e0e0e0, #888);
+  border-radius: 50%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: inset 0 1px 2px rgba(255,255,255,0.4), 0 1px 3px rgba(0,0,0,0.6);
+}
+.bolt::after {
+  content: '+';
+  font-size: 9px;
+  color: #555;
+  font-weight: bold;
+  line-height: 1;
+}
+.bolt-tl { top: 10px; left: 10px; }
+.bolt-tr { top: 10px; right: 10px; }
+.bolt-bl { bottom: 10px; left: 10px; }
+.bolt-br { bottom: 10px; right: 10px; }
+
+/* =========================================
+   WARNING SIGN
+========================================= */
+.warning-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--yellow);
+  color: var(--black);
+  font-family: 'Fredoka', sans-serif;
+  font-weight: 700;
+  font-size: 0.75rem;
+  padding: 5px 12px;
+  border: 2px solid var(--black);
+  border-radius: 4px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.warning-badge svg { flex-shrink: 0; }
+
+/* =========================================
+   SECTION A — HERO
+========================================= */
+#hero {
+  min-height: 100vh;
+  background: var(--black);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  padding: 100px 20px 80px;
+}
+
+/* Hazard stripe borders */
+#hero::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 28px;
+  background: var(--hazard-stripe);
+  z-index: 10;
+}
+#hero::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 28px;
+  background: var(--hazard-stripe);
+  z-index: 10;
+}
+
+/* Background construction grid texture */
+.hero-bg-pattern {
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(circle at 20% 80%, rgba(255,106,0,0.06) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(255,196,0,0.06) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+/* Floating triangles */
+.tri {
+  position: absolute;
+  width: 0; height: 0;
+  border-style: solid;
+  opacity: 0.5;
+  animation: floatTri 4s ease-in-out infinite;
+}
+.tri-1 { border-width: 0 15px 26px 15px; border-color: transparent transparent #FF6A00 transparent; top: 15%; left: 8%; animation-delay: 0s; }
+.tri-2 { border-width: 0 10px 18px 10px; border-color: transparent transparent #FFC400 transparent; top: 25%; right: 10%; animation-delay: 1s; }
+.tri-3 { border-width: 0 20px 35px 20px; border-color: transparent transparent #FF4B1F transparent; top: 60%; left: 5%; animation-delay: 2s; }
+.tri-4 { border-width: 0 12px 20px 12px; border-color: transparent transparent #FFC400 transparent; top: 55%; right: 7%; animation-delay: 0.5s; }
+.tri-5 { border-width: 0 8px 14px 8px; border-color: transparent transparent #FF6A00 transparent; top: 80%; left: 15%; animation-delay: 1.5s; }
+.tri-6 { border-width: 0 18px 30px 18px; border-color: transparent transparent #FFB800 transparent; top: 35%; right: 4%; animation-delay: 2.5s; }
+
+@keyframes floatTri {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-12px) rotate(8deg); }
+}
+
+/* Crane */
+.hero-crane {
+  position: absolute;
+  top: 28px;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  pointer-events: none;
+  z-index: 5;
+}
+
+/* Cones */
+.cone-wrap {
+  position: absolute;
+  bottom: 32px;
+  display: flex;
+  gap: 20px;
+  z-index: 5;
+  pointer-events: none;
+}
+.cone-wrap-left { left: 20px; }
+.cone-wrap-right { right: 20px; }
+
+.cone {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: floatCone 3s ease-in-out infinite;
+}
+.cone:nth-child(2) { animation-delay: 0.6s; }
+.cone-top {
+  width: 0; height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 28px solid #FF4B1F;
+  position: relative;
+}
+.cone-stripe {
+  position: absolute;
+  bottom: 8px;
+  left: -8px;
+  width: 16px;
+  height: 4px;
+  background: white;
+  opacity: 0.9;
+}
+.cone-base {
+  width: 24px;
+  height: 6px;
+  background: #cc3c18;
+  border-radius: 2px;
+}
+
+@keyframes floatCone {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+
+/* Hero text */
+.hero-title-wrap {
+  position: relative;
+  z-index: 6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+}
+
+.hero-ibrahim {
+  font-family: 'Lilita One', cursive;
+  font-size: clamp(72px, 18vw, 150px);
+  line-height: 0.9;
+  background: linear-gradient(180deg, #FFE566 0%, #FFC400 45%, #FF8C00 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  filter: drop-shadow(2px 2px 0 #c77800)
+           drop-shadow(4px 4px 0 #a05e00)
+           drop-shadow(7px 7px 0 #6b3c00)
+           drop-shadow(8px 8px 0 #5a3200)
+           drop-shadow(0 0 30px rgba(255,196,0,0.5));
+  will-change: filter;
+  animation: fadeSlideUp 0.8s ease both;
+  animation-delay: 0.1s;
+  letter-spacing: 2px;
+}
+
+.hero-is-turning {
+  font-family: 'Fredoka', sans-serif;
+  font-weight: 500;
+  font-size: clamp(18px, 4vw, 28px);
+  color: var(--silver);
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  margin: 4px 0;
+  animation: fadeSlideUp 0.8s ease both;
+  animation-delay: 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.hero-is-turning::before,
+.hero-is-turning::after {
+  content: '';
+  display: block;
+  width: 40px;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--silver));
+}
+.hero-is-turning::after { background: linear-gradient(90deg, var(--silver), transparent); }
+
+.hero-four {
+  font-family: 'Lilita One', cursive;
+  font-size: clamp(90px, 24vw, 200px);
+  line-height: 0.85;
+  background: linear-gradient(180deg, #FFE566 0%, #FFC400 45%, #FF8C00 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  filter: drop-shadow(2px 2px 0 #c77800)
+           drop-shadow(5px 5px 0 #a05e00)
+           drop-shadow(9px 9px 0 #6b3c00)
+           drop-shadow(10px 10px 0 #5a3200)
+           drop-shadow(0 0 40px rgba(255,180,0,0.5));
+  will-change: filter;
+  animation: fadeSlideUp 0.8s ease both;
+  animation-delay: 0.5s;
+  letter-spacing: 4px;
+}
+
+.hero-invited-badge {
+  margin-top: 24px;
+  background: var(--yellow);
+  color: var(--black);
+  font-family: 'Lilita One', cursive;
+  font-size: clamp(20px, 5vw, 32px);
+  padding: 10px 32px;
+  border: 3px solid var(--black);
+  border-radius: 6px;
+  letter-spacing: 2px;
+  box-shadow: 4px 4px 0 var(--black), inset 0 2px 0 rgba(255,255,255,0.3);
+  animation: fadeSlideUp 0.8s ease both, badgePulse 3s ease-in-out infinite;
+  animation-delay: 0.7s, 1.5s;
+  position: relative;
+}
+.hero-invited-badge .bolt { position: static; display: inline-block; vertical-align: middle; }
+
+.hero-sub {
+  margin-top: 16px;
+  font-size: clamp(14px, 3.5vw, 18px);
+  color: var(--warm-white);
+  font-weight: 400;
+  opacity: 0.9;
+  animation: fadeSlideUp 0.8s ease both;
+  animation-delay: 0.9s;
+  max-width: 400px;
+}
+
+@keyframes fadeSlideUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes badgePulse {
+  0%, 100% { box-shadow: 4px 4px 0 var(--black), 0 0 0 0 rgba(255,196,0,0); }
+  50% { box-shadow: 4px 4px 0 var(--black), 0 0 20px 6px rgba(255,196,0,0.3); }
+}
+
+/* Scroll indicator */
+.scroll-indicator {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  color: var(--silver);
+  font-size: 11px;
+  font-family: 'Fredoka', sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  animation: bounceDown 2s ease-in-out infinite;
+}
+.scroll-indicator svg { opacity: 0.6; }
+
+@keyframes bounceDown {
+  0%, 100% { transform: translateX(-50%) translateY(0); opacity: 0.7; }
+  50% { transform: translateX(-50%) translateY(6px); opacity: 1; }
+}
+
+/* =========================================
+   SECTION B — INVITATION MESSAGE
+========================================= */
+#message {
+  background: var(--charcoal);
+  padding: 0;
+}
+
+.message-inner {
+  position: relative;
+  padding: 50px 30px 50px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.metal-panel {
+  background: linear-gradient(135deg, #1f1f1f 0%, #131313 40%, #1a1a1a 70%, #111 100%);
+  border: 2px solid #2a2a2a;
+  border-radius: 8px;
+  padding: 40px 36px;
+  position: relative;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.6), inset 0 1px 0 rgba(255,255,255,0.05);
+}
+
+.message-hazard-top {
+  height: 20px;
+  background: var(--hazard-stripe);
+  border-radius: 6px 6px 0 0;
+  margin-bottom: -1px;
+}
+
+.message-title {
+  font-family: 'Lilita One', cursive;
+  font-size: clamp(18px, 4vw, 26px);
+  color: var(--yellow);
+  line-height: 1.3;
+  margin-bottom: 16px;
+  margin-top: 12px;
+}
+
+.message-body {
+  font-size: clamp(15px, 2.5vw, 17px);
+  color: var(--warm-white);
+  line-height: 1.7;
+  opacity: 0.9;
+}
+
+.message-warning-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+/* =========================================
+   SECTION C — EVENT DETAILS
+========================================= */
+#details {
+  background: var(--black);
+  padding: 60px 20px;
+}
+
+.details-title {
+  font-family: 'Lilita One', cursive;
+  font-size: clamp(22px, 5vw, 36px);
+  color: var(--yellow);
+  text-align: center;
+  margin-bottom: 40px;
+  filter: drop-shadow(2px 2px 0 #a05e00);
+}
+
+.details-card {
+  max-width: 700px;
+  margin: 0 auto;
+  background: linear-gradient(135deg, #1a1a1a, #111);
+  border: 3px solid var(--yellow);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 60px rgba(255,196,0,0.18), 0 0 120px rgba(255,106,0,0.06), 0 16px 50px rgba(0,0,0,0.6);
+  position: relative;
+}
+
+.details-hazard-top {
+  height: 24px;
+  background: var(--hazard-stripe);
+}
+
+.details-body {
+  padding: 32px 32px 24px;
+  position: relative;
+}
+
+.details-row {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 18px 0;
+  border-bottom: 1px solid rgba(255,196,0,0.1);
+}
+.details-row:last-of-type { border-bottom: none; }
+
+.details-icon-wrap {
+  width: 52px;
+  height: 52px;
+  background: rgba(255,196,0,0.1);
+  border: 2px solid rgba(255,196,0,0.3);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.details-label {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--yellow);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 2px;
+  display: block;
+}
+
+.details-value {
+  font-family: 'Lilita One', cursive;
+  font-size: clamp(18px, 4vw, 26px);
+  color: var(--warm-white);
+  line-height: 1.1;
+}
+
+.details-value-sub {
+  font-size: clamp(13px, 2.5vw, 15px);
+  color: var(--silver);
+  margin-top: 2px;
+}
+
+/* Location placeholder */
+.location-placeholder {
+  margin-top: 20px;
+  padding: 16px 20px;
+  border: 2px solid rgba(255,196,0,0.5);
+  border-radius: 6px;
+  background: rgba(255,196,0,0.05);
+}
+.location-placeholder-label {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--yellow);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 6px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.location-placeholder-value {
+  font-family: 'Fredoka', sans-serif;
+  font-size: 15px;
+  color: var(--silver);
+  font-style: italic;
+}
+
+.details-handwritten {
+  margin-top: 24px;
+  text-align: center;
+  font-family: 'Fredoka', sans-serif;
+  font-size: clamp(18px, 4vw, 24px);
+  color: var(--yellow);
+  font-weight: 500;
+  position: relative;
+}
+.details-handwritten::after {
+  content: '☺';
+  margin-left: 8px;
+  animation: smileyBounce 2s ease-in-out infinite;
+  display: inline-block;
+}
+
+@keyframes smileyBounce {
+  0%, 100% { transform: scale(1) rotate(-5deg); }
+  50% { transform: scale(1.2) rotate(5deg); }
+}
+
+.details-hazard-bottom {
+  height: 24px;
+  background: var(--hazard-stripe);
+}
+
+/* =========================================
+   SECTION D — COUNTDOWN
+========================================= */
+#countdown {
+  background: var(--charcoal);
+  padding: 60px 20px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+#countdown::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at center, rgba(255,196,0,0.04) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.countdown-title {
+  font-family: 'Lilita One', cursive;
+  font-size: clamp(20px, 4.5vw, 32px);
+  color: var(--yellow);
+  margin-bottom: 8px;
+  filter: drop-shadow(2px 2px 0 #a05e00);
+}
+
+.countdown-sub {
+  font-size: 14px;
+  color: var(--silver);
+  margin-bottom: 36px;
+  letter-spacing: 1px;
+}
+
+.countdown-grid {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.countdown-unit {
+  background: linear-gradient(160deg, #252525 0%, #141414 60%, #111 100%);
+  border: 2px solid var(--yellow);
+  border-radius: 10px;
+  padding: 20px 16px 14px;
+  min-width: 80px;
+  box-shadow: 0 0 0 1px rgba(255,196,0,0.15), 4px 4px 0 rgba(0,0,0,0.5), inset 0 1px 0 rgba(255,255,255,0.06);
+  position: relative;
+}
+.countdown-unit::before {
+  content: '';
+  position: absolute;
+  top: -1px; left: 20%; right: 20%;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent);
+  border-radius: 2px;
+}
+
+.countdown-num {
+  font-family: 'Lilita One', cursive;
+  font-size: clamp(40px, 10vw, 64px);
+  line-height: 1;
+  background: linear-gradient(180deg, #FFE566, #FFC400, #FF8C00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  filter: drop-shadow(2px 2px 0 #a05e00);
+  display: block;
+  min-width: 2ch;
+  text-align: center;
+}
+
+.countdown-label {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: var(--silver);
+  text-transform: uppercase;
+  margin-top: 6px;
+  display: block;
+}
+
+#countdown-done {
+  display: none;
+}
+
+.party-banner {
+  font-family: 'Lilita One', cursive;
+  font-size: clamp(28px, 7vw, 50px);
+  color: var(--yellow);
+  filter: drop-shadow(3px 3px 0 #a05e00);
+  animation: partyWiggle 0.5s ease-in-out infinite alternate;
+}
+
+@keyframes partyWiggle {
+  from { transform: rotate(-3deg) scale(0.98); }
+  to { transform: rotate(3deg) scale(1.02); }
+}
+
+/* =========================================
+   SECTION E — CONSTRUCTION ZONE
+========================================= */
+#vehicles {
+  background: var(--black);
+  padding: 60px 20px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.vehicles-title {
+  font-family: 'Lilita One', cursive;
+  font-size: clamp(22px, 5vw, 36px);
+  color: var(--yellow);
+  text-align: center;
+  margin-bottom: 10px;
+  filter: drop-shadow(2px 2px 0 #a05e00);
+}
+
+.vehicles-sub {
+  text-align: center;
+  color: var(--silver);
+  font-size: 14px;
+  margin-bottom: 50px;
+}
+
+.vehicles-stage {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 20px;
+  flex-wrap: wrap;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+/* SVG Vehicles are defined inline below */
+.vehicle-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: vehicleFloat 3.5s ease-in-out infinite;
+}
+.vehicle-wrap svg {
+  transition: filter 0.4s ease;
+}
+.vehicle-wrap:hover svg {
+  filter: drop-shadow(0 0 16px rgba(255,196,0,0.4));
+}
+.vehicle-wrap:nth-child(2) { animation-delay: 0.8s; }
+.vehicle-wrap:nth-child(3) { animation-delay: 1.6s; }
+
+@keyframes vehicleFloat {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.ground-strip {
+  height: 30px;
+  background: linear-gradient(180deg, #2a1f10, #1a1208);
+  width: 100%;
+  position: relative;
+  margin-top: 10px;
+}
+.ground-strip::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #5a3e1b, #7a5520, #5a3e1b);
+}
+
+/* =========================================
+   SECTION F — RSVP
+========================================= */
+#rsvp {
+  background: radial-gradient(ellipse at 50% 0%, rgba(255,196,0,0.05) 0%, transparent 60%), var(--charcoal);
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.rsvp-title {
+  font-family: 'Lilita One', cursive;
+  font-size: clamp(24px, 6vw, 42px);
+  color: var(--yellow);
+  margin-bottom: 10px;
+  filter: drop-shadow(2px 2px 0 #a05e00);
+}
+
+.rsvp-sub {
+  color: var(--warm-white);
+  font-size: clamp(14px, 3vw, 17px);
+  margin-bottom: 36px;
+  opacity: 0.85;
+  max-width: 450px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.rsvp-wa-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  background: var(--yellow);
+  color: var(--black);
+  font-family: 'Lilita One', cursive;
+  font-size: clamp(18px, 4vw, 24px);
+  padding: 16px 36px;
+  border: 3px solid var(--black);
+  border-radius: 8px;
+  text-decoration: none;
+  box-shadow: 5px 5px 0 var(--black), 0 0 20px rgba(255,196,0,0.2);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  letter-spacing: 1px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+.rsvp-wa-btn::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(255,255,255,0.15) 0%, transparent 50%);
+  pointer-events: none;
+}
+.rsvp-wa-btn::after {
+  content: '';
+  position: absolute;
+  top: 0; left: -100%;
+  width: 60%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+  transform: skewX(-20deg);
+  transition: left 0.5s ease;
+  pointer-events: none;
+}
+.rsvp-wa-btn:hover::after { left: 140%; }
+.rsvp-wa-btn:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 7px 7px 0 var(--black), 0 0 30px rgba(255,196,0,0.3);
+}
+.rsvp-wa-btn:active {
+  transform: translate(2px, 2px);
+  box-shadow: 3px 3px 0 var(--black);
+}
+
+.rsvp-note {
+  margin-top: 16px;
+  font-size: 12px;
+  color: var(--silver);
+  opacity: 0.7;
+}
+
+/* =========================================
+   SECTION G — CLOSING
+========================================= */
+#closing {
+  background: var(--black);
+  padding: 60px 20px 40px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+#closing::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 28px;
+  background: var(--hazard-stripe);
+}
+
+.closing-title {
+  font-family: 'Lilita One', cursive;
+  font-size: clamp(22px, 6vw, 46px);
+  color: var(--yellow);
+  margin-top: 40px;
+  margin-bottom: 16px;
+  line-height: 1.2;
+  filter: drop-shadow(2px 2px 0 #a05e00)
+           drop-shadow(4px 4px 0 #7a4500);
+}
+
+.closing-sub {
+  color: var(--warm-white);
+  font-size: clamp(15px, 3vw, 18px);
+  opacity: 0.85;
+  max-width: 500px;
+  margin: 0 auto 36px;
+}
+
+.closing-cones-row {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 36px;
+}
+
+.closing-cone {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: floatCone 2.5s ease-in-out infinite;
+}
+.closing-cone:nth-child(2) { animation-delay: 0.4s; }
+.closing-cone:nth-child(3) { animation-delay: 0.8s; }
+.closing-cone:nth-child(4) { animation-delay: 1.2s; }
+.closing-cone:nth-child(5) { animation-delay: 1.6s; }
+
+.closing-cta-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--orange);
+  color: var(--white);
+  font-family: 'Lilita One', cursive;
+  font-size: clamp(16px, 3.5vw, 20px);
+  padding: 14px 32px;
+  border: 3px solid var(--black);
+  border-radius: 8px;
+  text-decoration: none;
+  box-shadow: 4px 4px 0 var(--black);
+  transition: transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.2s ease;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+.closing-cta-btn:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0 var(--black);
+}
+
+.closing-maps-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: transparent;
+  color: var(--yellow);
+  font-family: 'Lilita One', cursive;
+  font-size: clamp(16px, 3.5vw, 20px);
+  padding: 13px 30px;
+  border: 3px solid var(--yellow);
+  border-radius: 8px;
+  text-decoration: none;
+  box-shadow: 3px 3px 0 rgba(255,196,0,0.3);
+  transition: transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.2s ease, background 0.2s ease;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+.closing-maps-btn:hover {
+  background: rgba(255,196,0,0.08);
+  transform: translate(-2px, -2px);
+  box-shadow: 5px 5px 0 rgba(255,196,0,0.4);
+}
+
+.closing-btn-row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+@media (min-width: 480px) {
+  .closing-btn-row { flex-direction: row; justify-content: center; }
+}
+
+.footer {
+  margin-top: 50px;
+  padding: 20px;
+  border-top: 1px solid rgba(255,255,255,0.05);
+  font-size: 13px;
+  color: var(--silver);
+  opacity: 0.6;
+  letter-spacing: 1px;
+}
+
+/* =========================================
+   SCROLL ANIMATIONS (Intersection Observer)
+========================================= */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.reveal-delay-1 { transition-delay: 0.1s; }
+.reveal-delay-2 { transition-delay: 0.2s; }
+.reveal-delay-3 { transition-delay: 0.3s; }
+.reveal-delay-4 { transition-delay: 0.4s; }
+
+/* Crane hook swing — defined here, referenced by inline SVG style */
+@keyframes swingHook {
+  0%   { transform: rotate(0deg); }
+  25%  { transform: rotate(-5deg); }
+  75%  { transform: rotate(5deg); }
+  100% { transform: rotate(0deg); }
+}
+
+/* =========================================
+   SMOOTH MOTION REFINEMENTS
+========================================= */
+
+/* Smoother float — ease-in-out cubic bezier feels more organic */
+@keyframes floatTri {
+  0%, 100% { transform: translateY(0) rotate(0deg); opacity: 0.4; }
+  50% { transform: translateY(-14px) rotate(6deg); opacity: 0.65; }
+}
+
+@keyframes floatCone {
+  0%, 100% { transform: translateY(0) scaleY(1); }
+  50% { transform: translateY(-7px) scaleY(0.97); }
+}
+
+@keyframes vehicleFloat {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+/* Slower, more gentle crane swing */
+@keyframes swingHook {
+  0%   { transform: rotate(0deg); }
+  25%  { transform: rotate(-5deg); }
+  75%  { transform: rotate(5deg); }
+  100% { transform: rotate(0deg); }
+}
+
+/* Smoother hero entrance — longer duration, cubic ease */
+@keyframes fadeSlideUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.hero-ibrahim    { animation-duration: 1s; animation-timing-function: cubic-bezier(0.22, 1, 0.36, 1); }
+.hero-is-turning { animation-duration: 1s; animation-timing-function: cubic-bezier(0.22, 1, 0.36, 1); animation-delay: 0.25s; }
+.hero-four       { animation-duration: 1s; animation-timing-function: cubic-bezier(0.22, 1, 0.36, 1); animation-delay: 0.45s; }
+.hero-invited-badge { animation: fadeSlideUp 1s cubic-bezier(0.22, 1, 0.36, 1) 0.65s both, badgePulse 4s ease-in-out 2s infinite; }
+.hero-sub        { animation-duration: 1s; animation-timing-function: cubic-bezier(0.22, 1, 0.36, 1); animation-delay: 0.8s; }
+
+/* Badge pulse — softer glow */
+@keyframes badgePulse {
+  0%, 100% { box-shadow: 4px 4px 0 var(--black), 0 0 0 0 rgba(255,196,0,0); }
+  50%       { box-shadow: 4px 4px 0 var(--black), 0 0 24px 8px rgba(255,196,0,0.2); }
+}
+
+/* Scroll indicator — gentler drift */
+@keyframes bounceDown {
+  0%, 100% { transform: translateX(-50%) translateY(0); opacity: 0.5; }
+  50%       { transform: translateX(-50%) translateY(5px); opacity: 0.9; }
+}
+.scroll-indicator { animation-duration: 2.4s; animation-timing-function: ease-in-out; }
+
+/* Smiley — softer scale */
+@keyframes smileyBounce {
+  0%, 100% { transform: scale(1) rotate(-4deg); }
+  50%       { transform: scale(1.15) rotate(4deg); }
+}
+.details-handwritten::after { animation-duration: 2.5s; }
+
+/* Party wiggle — only triggers when shown */
+@keyframes partyWiggle {
+  0%, 100% { transform: rotate(-2deg) scale(1); }
+  50%       { transform: rotate(2deg) scale(1.03); }
+}
+.party-banner { animation-duration: 1.2s; }
+
+/* Reveal — smoother with custom easing */
+.reveal {
+  opacity: 0;
+  transform: translateY(22px);
+  transition: opacity 0.75s cubic-bezier(0.22, 1, 0.36, 1),
+              transform 0.75s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.reveal.visible { opacity: 1; transform: translateY(0); }
+.reveal-delay-1 { transition-delay: 0.08s; }
+.reveal-delay-2 { transition-delay: 0.17s; }
+.reveal-delay-3 { transition-delay: 0.26s; }
+.reveal-delay-4 { transition-delay: 0.35s; }
+
+/* Button transitions — smoother */
+.rsvp-wa-btn     { transition: transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.2s ease; }
+.closing-cta-btn { transition: transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.2s ease; }
+
+/* Tri animations — stagger durations for variety */
+.tri-1 { animation-duration: 5s; }
+.tri-2 { animation-duration: 4.2s; }
+.tri-3 { animation-duration: 6s; }
+.tri-4 { animation-duration: 4.7s; }
+.tri-5 { animation-duration: 5.5s; }
+.tri-6 { animation-duration: 4.4s; }
+
+/* Vehicle float durations — slightly different per vehicle */
+.vehicle-wrap:nth-child(1) { animation-duration: 4s; }
+.vehicle-wrap:nth-child(2) { animation-duration: 4.8s; }
+.vehicle-wrap:nth-child(3) { animation-duration: 3.8s; }
+
+/* =========================================
+   REDUCED MOTION
+========================================= */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  .reveal { opacity: 1 !important; transform: none !important; }
+  html { scroll-behavior: auto; }
+}
+
+/* =========================================
+   RESPONSIVE — MOBILE FIRST
+========================================= */
+
+/* --- XS: up to 360px --- */
+@media (max-width: 360px) {
+  #hero { padding: 80px 14px 70px; }
+  .hero-ibrahim { font-size: 62px; }
+  .hero-four    { font-size: 80px; }
+  .hero-invited-badge { font-size: 16px; padding: 8px 20px; }
+  .countdown-unit { min-width: 60px; padding: 12px 8px 10px; }
+  .countdown-num { font-size: 36px; }
+  .details-body { padding: 16px 14px; }
+  .metal-panel  { padding: 22px 16px; }
+  .rsvp-wa-btn  { font-size: 15px; padding: 14px 20px; gap: 8px; }
+  .vehicles-stage svg { width: 120px; height: 98px; }
+}
+
+/* --- SM: 361–480px --- */
+@media (max-width: 480px) {
+  .cone-wrap-left, .cone-wrap-right { display: none; }
+  .hero-is-turning::before, .hero-is-turning::after { width: 16px; }
+  .countdown-grid { gap: 8px; }
+  .countdown-unit { min-width: 68px; padding: 14px 10px 10px; }
+  .details-body { padding: 20px 16px 18px; }
+  .metal-panel  { padding: 26px 18px; }
+  .message-inner { padding: 36px 16px; }
+  .vehicles-stage { gap: 12px; }
+  .rsvp-sub { font-size: 14px; }
+  .closing-cones-row { gap: 10px; }
+  /* Stack vehicle labels below on mobile */
+  .vehicle-wrap span { font-size: 10px; }
+}
+
+/* --- MD: 481–767px (tablet portrait) --- */
+@media (min-width: 481px) and (max-width: 767px) {
+  .hero-is-turning::before, .hero-is-turning::after { width: 30px; }
+  .vehicles-stage { gap: 24px; }
+  .details-card { margin: 0 10px; }
+}
+
+/* --- LG: 768px+ (tablet landscape / desktop) --- */
+@media (min-width: 768px) {
+  .vehicles-stage { gap: 36px; }
+  .hero-crane { height: 100px; }
+  .message-inner { padding: 60px 40px; }
+  #details { padding: 80px 20px; }
+  #rsvp     { padding: 80px 20px; }
+  #closing  { padding: 80px 20px 60px; }
+  .countdown-unit { min-width: 100px; padding: 24px 20px 18px; }
+  /* Show vehicle labels on wider screens */
+  .vehicle-wrap span { font-size: 12px; }
+  .vehicles-stage svg { width: 180px; height: 146px; }
+}
+
+/* --- XL: 1024px+ (desktop) --- */
+@media (min-width: 1024px) {
+  .vehicles-stage { gap: 60px; }
+  .hero-is-turning::before, .hero-is-turning::after { width: 80px; }
+  .vehicles-stage svg { width: 200px; height: 162px; }
+  .message-inner { max-width: 860px; }
+  .details-card  { max-width: 760px; }
+  .countdown-unit { min-width: 120px; }
+  #hero { padding: 120px 20px 100px; }
+}
+
+/* --- 2XL: 1280px+ (wide desktop) --- */
+@media (min-width: 1280px) {
+  .vehicles-stage svg { width: 220px; height: 178px; }
+  .container { max-width: 1200px; }
+}
+</style>
+</head>
+<body>
+
+<!-- =========================================
+     SECTION A — HERO
+========================================= -->
+<section id="hero" aria-label="Hero — Ibrahim is Turning Four">
+
+  <div class="hero-bg-pattern"></div>
+
+  <!-- Floating triangles -->
+  <div class="tri tri-1" aria-hidden="true"></div>
+  <div class="tri tri-2" aria-hidden="true"></div>
+  <div class="tri tri-3" aria-hidden="true"></div>
+  <div class="tri tri-4" aria-hidden="true"></div>
+  <div class="tri tri-5" aria-hidden="true"></div>
+  <div class="tri tri-6" aria-hidden="true"></div>
+
+  <!-- Crane SVG -->
+  <div class="hero-crane" aria-hidden="true">
+    <svg viewBox="0 0 1200 90" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+      <!-- Crane tower -->
+      <rect x="40" y="0" width="22" height="85" fill="#c0392b" rx="2"/>
+      <!-- Crane arm horizontal -->
+      <rect x="40" y="8" width="380" height="12" fill="#e74c3c" rx="2"/>
+      <!-- Counter arm -->
+      <rect x="20" y="8" width="22" height="8" fill="#c0392b" rx="1"/>
+      <!-- Diagonal support front -->
+      <line x1="52" y1="20" x2="380" y2="20" stroke="#ff6b6b" stroke-width="4"/>
+      <line x1="52" y1="20" x2="240" y2="20" stroke="#ff6b6b" stroke-width="2" opacity="0.5"/>
+      <!-- Cables -->
+      <line x1="300" y1="20" x2="300" y2="90" stroke="#8a9099" stroke-width="2" stroke-dasharray="4,2"/>
+      <line x1="380" y1="20" x2="380" y2="85" stroke="#8a9099" stroke-width="2" stroke-dasharray="4,2"/>
+      <!-- Hook -->
+      <g id="crane-hook" style="transform-origin: 300px 85px; animation: swingHook 3s ease-in-out infinite;">
+        <rect x="292" y="78" width="16" height="10" fill="#BFC3C7" rx="2"/>
+        <path d="M296 88 Q296 96 304 96 Q312 96 312 88" stroke="#BFC3C7" stroke-width="3" fill="none"/>
+      </g>
+      <!-- Warning stripes on tower -->
+      <rect x="40" y="0" width="22" height="8" fill="#FFC400"/>
+      <rect x="40" y="20" width="22" height="8" fill="#FFC400"/>
+      <rect x="40" y="40" width="22" height="8" fill="#FFC400"/>
+      <rect x="40" y="60" width="22" height="8" fill="#FFC400"/>
+    </svg>
+  </div>
+
+  <!-- Cones left -->
+  <div class="cone-wrap cone-wrap-left" aria-hidden="true">
+    <div class="cone"><div class="cone-top"><div class="cone-stripe"></div></div><div class="cone-base"></div></div>
+    <div class="cone"><div class="cone-top"><div class="cone-stripe"></div></div><div class="cone-base"></div></div>
+  </div>
+  <!-- Cones right -->
+  <div class="cone-wrap cone-wrap-right" aria-hidden="true">
+    <div class="cone"><div class="cone-top"><div class="cone-stripe"></div></div><div class="cone-base"></div></div>
+    <div class="cone"><div class="cone-top"><div class="cone-stripe"></div></div><div class="cone-base"></div></div>
+  </div>
+
+  <!-- Main title -->
+  <div class="hero-title-wrap">
+    <h1 class="hero-ibrahim">IBRAHIM</h1>
+    <span class="hero-is-turning">is Turning</span>
+    <span class="hero-four">FOUR</span>
+    <div class="hero-invited-badge">YOU'RE INVITED!</div>
+    <p class="hero-sub">Come and celebrate Ibrahim's 4th Birthday!</p>
+  </div>
+
+  <!-- Scroll hint -->
+  <div class="scroll-indicator" aria-hidden="true">
+    <span>Scroll</span>
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M12 5v14M5 12l7 7 7-7"/>
+    </svg>
+  </div>
+
+</section>
+
+<!-- =========================================
+     SECTION B — INVITATION MESSAGE
+========================================= -->
+<section id="message" aria-label="Invitation Message">
+  <div class="hazard-stripe-md"></div>
+  <div class="message-inner">
+    <div class="reveal">
+      <div class="metal-panel" style="position:relative;">
+        <!-- Bolts -->
+        <div class="bolt bolt-tl" aria-hidden="true"></div>
+        <div class="bolt bolt-tr" aria-hidden="true"></div>
+        <div class="bolt bolt-bl" aria-hidden="true"></div>
+        <div class="bolt bolt-br" aria-hidden="true"></div>
+
+        <div class="message-warning-row">
+          <svg width="36" height="36" viewBox="0 0 36 36" aria-hidden="true">
+            <polygon points="18,3 33,30 3,30" fill="#FFC400" stroke="#080808" stroke-width="1.5"/>
+            <text x="18" y="25" text-anchor="middle" font-size="16" font-weight="bold" fill="#080808" font-family="Arial">!</text>
+          </svg>
+          <span class="warning-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><path d="M12 2L2 20h20L12 2z"/></svg>
+            UNDER CONSTRUCTION
+          </span>
+        </div>
+
+        <h2 class="message-title">UNDER CONSTRUCTION...<br>A BIG CELEBRATION IS COMING!</h2>
+        <p class="message-body">
+          Get ready for a day full of fun, laughter, and exciting adventures!
+          Ibrahim is turning <strong style="color:var(--yellow);">FOUR</strong>, and we'd love to celebrate
+          this special milestone with you. Put on your hard hat and get ready
+          to build some incredible memories together!
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="hazard-stripe-md"></div>
+</section>
+
+<!-- =========================================
+     SECTION C — EVENT DETAILS
+========================================= -->
+<section id="details" aria-label="Event Details">
+  <div class="container">
+    <h2 class="details-title reveal">📋 EVENT DETAILS</h2>
+
+    <div class="details-card reveal reveal-delay-1">
+      <div class="details-hazard-top" aria-hidden="true"></div>
+      <div class="details-body">
+        <!-- Bolts -->
+        <div class="bolt bolt-tl" aria-hidden="true"></div>
+        <div class="bolt bolt-tr" aria-hidden="true"></div>
+
+        <!-- Day -->
+        <div class="details-row">
+          <div class="details-icon-wrap" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#FFC400" stroke-width="2">
+              <rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/>
+              <line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/>
+              <rect x="7" y="14" width="4" height="4" rx="1" fill="#FFC400" stroke="none"/>
+            </svg>
+          </div>
+          <div>
+            <span class="details-label">Hari / Day</span>
+            <div class="details-value">Sabtu</div>
+            <div class="details-value-sub">Saturday</div>
+          </div>
+        </div>
+
+        <!-- Date -->
+        <div class="details-row">
+          <div class="details-icon-wrap" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#FFC400" stroke-width="2">
+              <rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/>
+              <line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/>
+              <text x="12" y="20" text-anchor="middle" font-size="8" fill="#FFC400" stroke="none" font-family="Arial" font-weight="bold">14</text>
+            </svg>
+          </div>
+          <div>
+            <span class="details-label">Tanggal / Date</span>
+            <div class="details-value">14 November 2026</div>
+          </div>
+        </div>
+
+        <!-- Time -->
+        <div class="details-row">
+          <div class="details-icon-wrap" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#FFC400" stroke-width="2">
+              <circle cx="12" cy="12" r="9"/>
+              <polyline points="12 7 12 12 15.5 15.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div>
+            <span class="details-label">Jam / Time</span>
+            <div class="details-value">12.30 WIB</div>
+          </div>
+        </div>
+
+        <!-- Location placeholder -->
+        <!-- ⚠️ EDIT LOKASI DI SINI — ganti teks di dalam .location-placeholder-value -->
+        <div class="location-placeholder">
+          <div class="location-placeholder-label">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#FFC400" stroke-width="2.5" aria-hidden="true">
+              <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
+              <circle cx="12" cy="9" r="2.5"/>
+            </svg>
+            Lokasi / Location
+          </div>
+          <!-- EDIT: Ganti "[Lokasi akan segera diumumkan]" dengan alamat lengkap -->
+          <div class="location-placeholder-value">Genio Cisaat</div>
+        </div>
+
+        <div class="details-handwritten">Jangan lupa hadir ya!</div>
+      </div>
+      <div class="details-hazard-bottom" aria-hidden="true"></div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================
+     SECTION D — COUNTDOWN
+========================================= -->
+<section id="countdown" aria-label="Countdown to Ibrahim's Birthday">
+  <h2 class="countdown-title reveal">⏳ WAKTU MENUJU HARI SPESIAL</h2>
+  <p class="countdown-sub reveal reveal-delay-1">14 November 2026 · 12:30 WIB</p>
+
+  <div id="countdown-live" class="countdown-grid" aria-live="polite">
+    <div class="countdown-unit reveal reveal-delay-1">
+      <span class="countdown-num" id="cd-days">--</span>
+      <span class="countdown-label">Days</span>
+    </div>
+    <div class="countdown-unit reveal reveal-delay-2">
+      <span class="countdown-num" id="cd-hours">--</span>
+      <span class="countdown-label">Hours</span>
+    </div>
+    <div class="countdown-unit reveal reveal-delay-3">
+      <span class="countdown-num" id="cd-mins">--</span>
+      <span class="countdown-label">Minutes</span>
+    </div>
+    <div class="countdown-unit reveal reveal-delay-4">
+      <span class="countdown-num" id="cd-secs">--</span>
+      <span class="countdown-label">Seconds</span>
+    </div>
+  </div>
+
+  <div id="countdown-done" aria-live="assertive">
+    <div class="party-banner">🎉 HAPPY 4TH BIRTHDAY, IBRAHIM! 🎉</div>
+    <p style="color:var(--warm-white);margin-top:16px;font-size:18px;">Selamat ulang tahun ke-4! Semoga selalu sehat dan bahagia!</p>
+  </div>
+</section>
+
+<!-- =========================================
+     SECTION E — CONSTRUCTION ZONE
+========================================= -->
+<section id="vehicles" aria-label="Construction Zone">
+  <div class="hazard-stripe-md" aria-hidden="true"></div>
+  <div style="padding:50px 20px 0;">
+    <h2 class="vehicles-title reveal">🚧 CONSTRUCTION ZONE</h2>
+    <p class="vehicles-sub reveal reveal-delay-1">The crew is ready to party!</p>
+
+    <div class="vehicles-stage">
+
+      <!-- EXCAVATOR -->
+      <div class="vehicle-wrap reveal reveal-delay-1">
+        <svg width="160" height="130" viewBox="0 0 160 130" xmlns="http://www.w3.org/2000/svg" aria-label="Excavator">
+          <!-- Body -->
+          <rect x="30" y="50" width="90" height="50" rx="6" fill="#FFC400"/>
+          <rect x="30" y="50" width="90" height="12" rx="4" fill="#FFB800"/>
+          <!-- Cabin -->
+          <rect x="55" y="20" width="52" height="38" rx="5" fill="#FFB800"/>
+          <rect x="58" y="23" width="22" height="16" rx="3" fill="#b0d4e8" opacity="0.9"/>
+          <rect x="82" y="23" width="22" height="16" rx="3" fill="#b0d4e8" opacity="0.9"/>
+          <!-- Window shine -->
+          <rect x="60" y="25" width="6" height="4" rx="1" fill="white" opacity="0.4"/>
+          <!-- Arm base -->
+          <rect x="96" y="30" width="12" height="6" rx="2" fill="#e0a000"/>
+          <!-- Arm -->
+          <line x1="102" y1="33" x2="140" y2="15" stroke="#e0a000" stroke-width="10" stroke-linecap="round"/>
+          <line x1="140" y1="15" x2="148" y2="40" stroke="#cc8800" stroke-width="8" stroke-linecap="round"/>
+          <!-- Bucket -->
+          <path d="M140 40 L155 42 L152 60 L136 58 Z" fill="#cc8800"/>
+          <path d="M136 58 L152 60 L150 65 L134 63 Z" fill="#aaa"/>
+          <!-- Tracks -->
+          <rect x="22" y="96" width="96" height="18" rx="9" fill="#333"/>
+          <rect x="26" y="99" width="88" height="12" rx="6" fill="#444"/>
+          <circle cx="36" cy="105" r="8" fill="#222"/><circle cx="36" cy="105" r="4" fill="#555"/>
+          <circle cx="60" cy="105" r="8" fill="#222"/><circle cx="60" cy="105" r="4" fill="#555"/>
+          <circle cx="84" cy="105" r="8" fill="#222"/><circle cx="84" cy="105" r="4" fill="#555"/>
+          <circle cx="108" cy="105" r="8" fill="#222"/><circle cx="108" cy="105" r="4" fill="#555"/>
+          <!-- Exhaust pipe -->
+          <rect x="34" y="30" width="6" height="22" rx="3" fill="#888"/>
+          <ellipse cx="37" cy="29" rx="4" ry="3" fill="#666"/>
+        </svg>
+        <span style="color:var(--silver);font-size:12px;letter-spacing:1px;text-transform:uppercase;margin-top:6px;">Excavator</span>
+      </div>
+
+      <!-- WHEEL LOADER -->
+      <div class="vehicle-wrap reveal reveal-delay-2">
+        <svg width="160" height="130" viewBox="0 0 160 130" xmlns="http://www.w3.org/2000/svg" aria-label="Wheel Loader">
+          <!-- Bucket -->
+          <path d="M5 72 L40 68 L44 90 L8 94 Z" fill="#cc8800"/>
+          <path d="M8 94 L44 90 L42 100 L6 104 Z" fill="#aaa"/>
+          <!-- Arm -->
+          <line x1="40" y1="78" x2="62" y2="55" stroke="#e0a000" stroke-width="10" stroke-linecap="round"/>
+          <line x1="40" y1="78" x2="68" y2="72" stroke="#FFB800" stroke-width="8" stroke-linecap="round"/>
+          <!-- Body -->
+          <rect x="55" y="50" width="90" height="52" rx="8" fill="#FFC400"/>
+          <rect x="55" y="50" width="90" height="14" rx="6" fill="#FFB800"/>
+          <!-- Cabin -->
+          <rect x="90" y="22" width="48" height="36" rx="6" fill="#FFB800"/>
+          <rect x="93" y="25" width="20" height="14" rx="3" fill="#b0d4e8" opacity="0.9"/>
+          <rect x="115" y="25" width="20" height="14" rx="3" fill="#b0d4e8" opacity="0.9"/>
+          <rect x="95" y="27" width="6" height="4" rx="1" fill="white" opacity="0.4"/>
+          <!-- Exhaust -->
+          <rect x="96" y="12" width="6" height="12" rx="3" fill="#888"/>
+          <!-- Wheels -->
+          <circle cx="75" cy="106" r="20" fill="#222"/><circle cx="75" cy="106" r="13" fill="#333"/><circle cx="75" cy="106" r="6" fill="#555"/>
+          <circle cx="128" cy="106" r="20" fill="#222"/><circle cx="128" cy="106" r="13" fill="#333"/><circle cx="128" cy="106" r="6" fill="#555"/>
+          <!-- Wheel shine -->
+          <circle cx="69" cy="100" r="3" fill="rgba(255,255,255,0.1)"/>
+          <circle cx="122" cy="100" r="3" fill="rgba(255,255,255,0.1)"/>
+        </svg>
+        <span style="color:var(--silver);font-size:12px;letter-spacing:1px;text-transform:uppercase;margin-top:6px;">Wheel Loader</span>
+      </div>
+
+      <!-- CEMENT MIXER -->
+      <div class="vehicle-wrap reveal reveal-delay-3">
+        <svg width="160" height="130" viewBox="0 0 160 130" xmlns="http://www.w3.org/2000/svg" aria-label="Cement Mixer">
+          <!-- Truck body -->
+          <rect x="10" y="60" width="85" height="45" rx="6" fill="#FFC400"/>
+          <!-- Cabin -->
+          <rect x="82" y="38" width="60" height="52" rx="6" fill="#FFB800"/>
+          <rect x="85" y="41" width="24" height="18" rx="3" fill="#b0d4e8" opacity="0.9"/>
+          <rect x="111" y="41" width="24" height="18" rx="3" fill="#b0d4e8" opacity="0.9"/>
+          <rect x="87" y="43" width="7" height="5" rx="1" fill="white" opacity="0.4"/>
+          <!-- Front bumper -->
+          <rect x="136" y="80" width="16" height="10" rx="2" fill="#888"/>
+          <!-- Mixer drum -->
+          <ellipse cx="52" cy="55" rx="34" ry="28" fill="#E0A000"/>
+          <ellipse cx="52" cy="55" rx="28" ry="22" fill="#CC8800"/>
+          <!-- Drum spiral decoration -->
+          <path d="M30 48 Q52 38 74 48 Q52 58 30 48Z" fill="#FFB800" opacity="0.6"/>
+          <path d="M30 58 Q52 48 74 58 Q52 68 30 58Z" fill="#FFB800" opacity="0.4"/>
+          <!-- Drum support -->
+          <rect x="14" y="62" width="10" height="6" rx="2" fill="#888"/>
+          <rect x="78" y="62" width="10" height="6" rx="2" fill="#888"/>
+          <!-- Chute -->
+          <line x1="10" y1="80" x2="0" y2="100" stroke="#888" stroke-width="6" stroke-linecap="round"/>
+          <!-- Exhaust -->
+          <rect x="128" y="22" width="6" height="18" rx="3" fill="#888"/>
+          <!-- Wheels -->
+          <circle cx="38" cy="108" r="18" fill="#222"/><circle cx="38" cy="108" r="11" fill="#333"/><circle cx="38" cy="108" r="5" fill="#555"/>
+          <circle cx="80" cy="108" r="18" fill="#222"/><circle cx="80" cy="108" r="11" fill="#333"/><circle cx="80" cy="108" r="5" fill="#555"/>
+          <circle cx="122" cy="108" r="18" fill="#222"/><circle cx="122" cy="108" r="11" fill="#333"/><circle cx="122" cy="108" r="5" fill="#555"/>
+        </svg>
+        <span style="color:var(--silver);font-size:12px;letter-spacing:1px;text-transform:uppercase;margin-top:6px;">Cement Mixer</span>
+      </div>
+
+    </div><!-- end vehicles-stage -->
+
+    <!-- Ground strip -->
+    <div class="ground-strip" aria-hidden="true" style="margin-top:0;"></div>
+  </div>
+  <div class="hazard-stripe-md" aria-hidden="true"></div>
+</section>
+
+<!-- =========================================
+     SECTION F — RSVP
+========================================= -->
+<section id="rsvp" aria-label="RSVP Konfirmasi Kehadiran">
+  <h2 class="rsvp-title reveal">READY TO JOIN THE CREW?</h2>
+  <p class="rsvp-sub reveal reveal-delay-1">
+    Konfirmasikan kehadiranmu dan bergabunglah dalam perayaan konstruksi terbesar!
+    Let us know if you can make it!
+  </p>
+  <div class="reveal reveal-delay-2">
+    <a id="wa-rsvp-btn" href="#" class="rsvp-wa-btn" target="_blank" rel="noopener noreferrer" aria-label="Konfirmasi kehadiran via WhatsApp">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+      </svg>
+      KONFIRMASI VIA WHATSAPP
+    </a>
+  </div>
+  <p class="rsvp-note reveal reveal-delay-3">Klik tombol di atas untuk konfirmasi kehadiranmu lewat WhatsApp</p>
+</section>
+
+<!-- =========================================
+     SECTION G — CLOSING
+========================================= -->
+<section id="closing" aria-label="Closing">
+
+  <div class="closing-cones-row" aria-hidden="true">
+    <div class="closing-cone"><div class="cone-top" style="border-width:0 12px 32px 12px;border-bottom-color:#FF4B1F;"><div class="cone-stripe"></div></div><div class="cone-base" style="width:28px;"></div></div>
+    <div class="closing-cone"><div class="cone-top" style="border-width:0 8px 22px 8px;border-bottom-color:#FF6A00;"><div class="cone-stripe"></div></div><div class="cone-base" style="width:20px;"></div></div>
+    <div class="closing-cone"><div class="cone-top" style="border-width:0 14px 36px 14px;border-bottom-color:#FF4B1F;"><div class="cone-stripe"></div></div><div class="cone-base" style="width:32px;"></div></div>
+    <div class="closing-cone"><div class="cone-top" style="border-width:0 8px 22px 8px;border-bottom-color:#FF6A00;"><div class="cone-stripe"></div></div><div class="cone-base" style="width:20px;"></div></div>
+    <div class="closing-cone"><div class="cone-top" style="border-width:0 12px 32px 12px;border-bottom-color:#FF4B1F;"><div class="cone-stripe"></div></div><div class="cone-base" style="width:28px;"></div></div>
+  </div>
+
+  <h2 class="closing-title reveal">SEE YOU AT THE<br>CONSTRUCTION SITE!</h2>
+  <p class="closing-sub reveal reveal-delay-1">
+    Let's make Ibrahim's 4th birthday an unforgettable adventure!
+    Ayo buat ulang tahun Ibrahim jadi momen yang tak terlupakan!
+  </p>
+
+  <div class="closing-btn-row reveal reveal-delay-2">
+    <a href="#rsvp" class="closing-cta-btn" aria-label="Konfirmasi kehadiran">
+      🚧 KONFIRMASI SEKARANG
+    </a>
+    <a href="https://maps.google.com/?q=Genio+Cisaat" target="_blank" rel="noopener noreferrer" class="closing-maps-btn" aria-label="Lihat lokasi di Google Maps">
+      📍 LIHAT LOKASI
+    </a>
+  </div>
+
+  <div class="footer">
+    Made with ❤️ for Ibrahim's special day &nbsp;·&nbsp; 14 November 2026
+  </div>
+
+</section>
+
+<!-- =========================================
+     JAVASCRIPT
+========================================= -->
+<script>
+/* ============================================
+   CONFIG — EDIT DI SINI
+   - whatsapp: Nomor WA tanpa + (contoh: 6281234567890)
+   - birthdayDate: tanggal ulang tahun (ISO 8601 + offset Jakarta)
+============================================ */
+const CONFIG = {
+  whatsapp: "6285603134744", // ⚠️ GANTI DENGAN NOMOR WA YANG BISA DIHUBUNGI
+  birthdayName: "Ibrahim",
+  birthdayDate: "2026-11-14T12:30:00+07:00",
+};
+
+/* ============================================
+   WHATSAPP RSVP
+============================================ */
+(function setupWhatsApp() {
+  const btn = document.getElementById("wa-rsvp-btn");
+  const msg = encodeURIComponent(
+    `Halo! Saya ingin konfirmasi kehadiran untuk ulang tahun ${CONFIG.birthdayName} yang ke-4 pada 14 November 2026. ✅ Saya hadir!`
+  );
+  if (CONFIG.whatsapp && CONFIG.whatsapp !== "62XXXXXXXXXXX") {
+    btn.href = `https://wa.me/${CONFIG.whatsapp}?text=${msg}`;
+  } else {
+    btn.addEventListener("click", function (e) {
+      e.preventDefault();
+      alert("⚠️ Nomor WhatsApp belum dikonfigurasi.\nEdit CONFIG.whatsapp di dalam file index.html.");
+    });
+  }
+})();
+
+/* ============================================
+   COUNTDOWN TIMER
+============================================ */
+(function startCountdown() {
+  const target = new Date(CONFIG.birthdayDate).getTime();
+  const liveEl = document.getElementById("countdown-live");
+  const doneEl = document.getElementById("countdown-done");
+  const daysEl = document.getElementById("cd-days");
+  const hoursEl = document.getElementById("cd-hours");
+  const minsEl = document.getElementById("cd-mins");
+  const secsEl = document.getElementById("cd-secs");
+
+  function pad(n) { return String(n).padStart(2, "0"); }
+
+  function tick() {
+    const now = Date.now();
+    const diff = target - now;
+
+    if (diff <= 0) {
+      liveEl.style.display = "none";
+      doneEl.style.display = "block";
+      return;
+    }
+
+    const days  = Math.floor(diff / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const mins  = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+    const secs  = Math.floor((diff % (1000 * 60)) / 1000);
+
+    daysEl.textContent  = pad(days);
+    hoursEl.textContent = pad(hours);
+    minsEl.textContent  = pad(mins);
+    secsEl.textContent  = pad(secs);
+  }
+
+  tick();
+  setInterval(tick, 1000);
+})();
+
+/* ============================================
+   SCROLL REVEAL (Intersection Observer)
+============================================ */
+(function initReveal() {
+  const els = document.querySelectorAll(".reveal");
+  if (!("IntersectionObserver" in window)) {
+    els.forEach(function(el) { el.classList.add("visible"); });
+    return;
+  }
+  const obs = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+        obs.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12 });
+  els.forEach(function(el) { obs.observe(el); });
+})();
+</script>
+</body>
+</html>
